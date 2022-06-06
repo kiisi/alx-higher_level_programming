@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 
-def print_list_integer(_list):
-    for i in _list:
+def print_list_integer(my_list=[]):
+    for i in my_list:
         print("{:s}".format(i))
