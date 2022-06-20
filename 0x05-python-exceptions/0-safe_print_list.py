@@ -2,7 +2,12 @@
 
 def safe_print_list(my_list=[], x=0):
     try:
+        count = 0
         for i in range(x):
-            return my_list[i]
+            print(my_list[i], end="")
+            count += 1
+        print(end="\n")
+        return count
     except IndexError:
-        return 
+        print(end="\n")
+        return count
